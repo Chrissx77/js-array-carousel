@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: gray;
+}
+
 .image-container {
     position: relative;
     width: 1000px;
@@ -47,4 +51,20 @@ button {
     bottom: 0;
     margin-bottom: 10px;
 
+}
+
+.thumbnails{
+    display: flex;
+}
+
+.thumbnails img{
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+    height: 100px;
+    filter: grayscale(1);
+}
+
+.filter-none{
+    filter: none !important;
 }
