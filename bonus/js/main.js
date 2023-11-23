@@ -13,12 +13,15 @@ btn_next.addEventListener("click",
     }
 )
 
-let i = item_colletion.length - 1;
 const btn_previous = document.getElementById("previous");
 btn_previous.addEventListener("click",
     function () {
-        i = index;
-        index = (index + 1) % arrayImage.length;
+        if(index > 0){
+            index--;
+        }
+        else{
+            index = arrayImage.length - 1;
+        }
         img.src = arrayImage[index];
     }
 )
