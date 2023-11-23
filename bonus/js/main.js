@@ -17,8 +17,9 @@ let i = item_colletion.length - 1;
 const btn_previous = document.getElementById("previous");
 btn_previous.addEventListener("click",
     function () {
-        i = (i - 1) % 0;
-        img.src = arrayImage[i];
+        i = index;
+        index = (index + 1) % arrayImage.length;
+        img.src = arrayImage[index];
     }
 )
 
