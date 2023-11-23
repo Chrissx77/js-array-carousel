@@ -1,9 +1,6 @@
 const arrayImage = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"];
 
 const thumbnails = document.getElementsByClassName("thumb-item");
-// console.log(thumbnails[0]);
-// thumbnails[0].style.filter = "none";
-
 
 let img = document.getElementById("img");
 img.src = arrayImage[0];
@@ -17,9 +14,7 @@ btn_next.addEventListener("click",
         thumbnails[index - 1].classList.remove("filter-none");
         thumbnails[index].classList.add("filter-none");
         if (index === arrayImage.length - 1) {
-            thumbnails[index].classList.remove("filter-none");
             index = 0;
-            thumbnails[index].classList.add("filter-none");
         }
     }
 )
